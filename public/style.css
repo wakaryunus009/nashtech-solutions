@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  /* Backgound Color */
+  --bg-danger: #f63440;
+  --bg-white: #fff;
+  --bg-light-white: #f5f5f5;
+
+  /* Text Color */
+  --primary-font: "Poppins", sans-serif;
+  --text-white: #fff;
+  --text-black: #121212;
+  --text-danger: #f63440;
+  --text-gray: #aaa;
+  --text-dark-gray: #777;
+}
+body {
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  background: var(--bg-white);
+  color: var(--text-black);
+  overflow-x: hidden;
+}
+
+/* Custom Css */
+a,
+a:hover {
+  text-decoration: none;
+}
+p {
+  margin: 0;
+}
+.btn-danger {
+  background: var(--bg-danger);
+  border-color: var(--bg-danger);
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.btn-danger:hover {
+  color: var(--text-danger);
+  background: transparent;
+}
+
+/* Navigation CSS */
+
+#header .fixed-top {
+  box-shadow: 0 0.125rem 0.675rem rgb(0 0 0 / 5%);
+  background-color: #cbc3c19b;
+}
+#header .navbar-nav .nav-item .nav-link {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 50%;
+}
+#header .navbar-nav .nav-item .nav-link:hover,
+#header .navbar-nav .nav-item .nav-link:active {
+  color: var(--bg-danger);
+  font-weight: 1000;
+  text-decoration: underline;
+}
+#header .navbar-toggler {
+  width: unset;
+  height: unset;
+}
+#header .navbar-toggler:focus {
+  box-shadow: none;
+}
+/* Home CSS */
+.home .home-banner-1,
+.home .home-banner-2,
+.home .home-banner-3,
+.home .home-banner-4,
+.home .home-banner-5 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 90% center;
+  min-height: 700px;
+  position: relative;
+}
+.home .home-banner-1 {
+  background-image: url("./pexels-darlene-alderson-4389741.jpg");
+}
+.home .home-banner-2 {
+  background-image: url("./pexels-jonathan-borba-14891540.jpg");
+}
+.home .home-banner-3 {
+  background-image: url("./pexels-pavel-danilyuk-8638300.jpg");
+}
+.home .home-banner-4 {
+  background-image: url("./pexels-thisisengineering-3861972.jpg");
+}
+.home .home-banner-5 {
+  background-image: url("./artificial-intelligence-3382507_1280.jpg");
+}
+.home .home-banner .home-banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--bg-white);
+  text-align: center;
+}
+
+.home .home-banner .home-banner-text h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.home .home-banner .home-banner-text h2 {
+  font-size: 1.5rem;
+  font-weight: 650;
+}
+
+.home .carousel-indicators [data-bs-target] {
+  background-color: #cbc3c1d1;
+  width: 2.5rem;
+  height: 0.313rem;
+}
+.home .carousel-control-next-icon,
+.home .carousel-control-prev-icon {
+  color: var(--text-danger);
+  font-weight: 600;
+  font-size: 1rem;
+}
+/* About Us */
+.special {
+  padding: 6rem 0;
+}
+.special h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.special h1:hover {
+  text-decoration: underline;
+  color: #f63440;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+.special .countdown-container {
+  padding-top: 1.375em;
+}
+.special .countdown-container p {
+  color: var(--text-dark-gray);
+  font-weight: 500;
+  line-height: 1.875rem;
+}
+/* Our Services */
+.products {
+  padding: 2.75rem;
+}
+.products h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.products h1:hover {
+  text-decoration: underline;
+  color: #f63440;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+.products a {
+  text-decoration: none;
+  color: var(--text-black);
+}
+.products .product-list .product-image img:hover {
+  transition: all 2s;
+  rotate: 360deg;
+  border-radius: 50px;
+  transform: scale(0.7);
+}
+
+.product-list .product-name h3 {
+  font-size: 1.12rem;
+  color: var(--text-black);
+  transition: all 0.3s ease 0s;
+}
+
+.product-list .product-name h3:hover {
+  color: var(--text-danger);
+  font-weight: bold;
+  text-decoration: underline;
+}
+.product-list .product-name .amount {
+  color: var(--text-dark-gray);
+}
+/* Contact Us */
+
+.contact {
+  padding: 4rem 0;
+  background-color: var(--bg-light-white);
+}
+
+.contact h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.contact h3 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.contact h1:hover,
+.contact h3:hover {
+  text-decoration: underline;
+  color: #f63440;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+.contact a svg.icon {
+  position: relative;
+  bottom: 10px;
+  color: #f63440;
+}
+.contact .info li p a {
+  font-size: 1rem;
+  display: inline-block;
+  margin: 0.75rem 0;
+  color: var(--text-black);
+  text-decoration: none;
+}
+.contact .form-group {
+  margin-bottom: 1.5rem;
+}
+.contact .form-control {
+  height: 3.75rem;
+  padding: 0.375rem 1.1875rem;
+  border: none;
+  font-size: 1rem;
+  box-shadow: 0 0.175rem 1.25rem 0 rgb(0 0 0 /12%);
+}
+
+.contact .textarea {
+  width: 100%;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.1875rem;
+  border: none;
+  font-size: 1rem;
+  margin-top: 0.3125rem;
+  box-shadow: 0 0.175rem 1.25rem 0 rgba(0, 0, 0, 0.164);
+}
+.contact .textarea:focus {
+  outline: none;
+  border: none;
+}
+/* Footer */
+.copyright {
+  background: var(--bg-danger);
+}
+.copyright p,
+.copyright a {
+  color: var(--text-white);
+}
+.copyright a:hover {
+  color: var(--text-dark-gray);
+  font-weight: bold;
+  text-decoration: none;
+}
+/* <!-- Scroll Back to TOP --> */
+#scrollUp {
+  position: fixed;
+  right: 2%;
+  bottom: 3%;
+  height: 2.813rem;
+  width: 2.5rem;
+  border-radius: 0.25rem;
+  text-align: center;
+  cursor: pointer;
+  z-index: 500;
+  display: none;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  background: var(--text-black);
+}
+#scrollUp span {
+  line-height: 2.525rem;
+  color: var(--text-white);
+}
+#scrollUp.scrollActive {
+  display: block;
+}
